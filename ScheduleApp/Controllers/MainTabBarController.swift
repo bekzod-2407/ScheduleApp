@@ -25,10 +25,9 @@ class MainTabBarController: UITabBarController {
       
     }
 
-    func createNavController(with vc: UIViewController, name itemName: String , itemImage: String) -> UINavigationController {
+    func createNavController(with vc : UIViewController, name itemName: String , itemImage: String) -> UINavigationController {
         
-        let item  = UITabBarItem(title: itemName, image: .init(systemName: itemImage)?.withAlignmentRectInsets(.init(top: 20, left: 0, bottom: 0, right: 0)), tag: 0)
-        item.titlePositionAdjustment = .init(horizontal: 0, vertical: 10)
+        let item  = UITabBarItem(title: itemName, image: .init(systemName: itemImage), tag: 0)
         let navController = UINavigationController(rootViewController: vc)
        
         navController.tabBarItem = item
