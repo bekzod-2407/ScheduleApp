@@ -49,8 +49,8 @@ class SheduleViewController: UIViewController {
        swipeDown.direction = .down
        calendar.addGestureRecognizer(swipeDown)
     }
+    
     @objc private func swipe(gesture: UISwipeGestureRecognizer) {
-        
         switch gesture.direction {
         case .up: showHideButtonTapped()
         case .down: showHideButtonTapped()
