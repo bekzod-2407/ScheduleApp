@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		CEDD24742897911400B310AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD24732897911400B310AC /* AppDelegate.swift */; };
-		CEDD24762897911400B310AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD24752897911400B310AC /* SceneDelegate.swift */; };
-		CEDD24782897911400B310AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD24772897911400B310AC /* ViewController.swift */; };
-		CEDD247B2897911400B310AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDD24792897911400B310AC /* Main.storyboard */; };
+		CEDD24782897911400B310AC /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD24772897911400B310AC /* MainTabBarController.swift */; };
 		CEDD247D2897911400B310AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDD247C2897911400B310AC /* Assets.xcassets */; };
 		CEDD24802897911400B310AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDD247E2897911400B310AC /* LaunchScreen.storyboard */; };
+		CEDD248B2897962B00B310AC /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD248A2897962B00B310AC /* ScheduleViewController.swift */; };
+		CEDD248D2897965800B310AC /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD248C2897965800B310AC /* TasksViewController.swift */; };
+		CEDD248F2897968100B310AC /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD248E2897968100B310AC /* ContactsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEDD24702897911400B310AC /* ScheduleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScheduleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDD24732897911400B310AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEDD24752897911400B310AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEDD24772897911400B310AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CEDD247A2897911400B310AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEDD24772897911400B310AC /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		CEDD247C2897911400B310AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEDD247F2897911400B310AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEDD24812897911400B310AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEDD248A2897962B00B310AC /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		CEDD248C2897965800B310AC /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		CEDD248E2897968100B310AC /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		CEDD24722897911400B310AC /* ScheduleApp */ = {
 			isa = PBXGroup;
 			children = (
-				CEDD24732897911400B310AC /* AppDelegate.swift */,
-				CEDD24752897911400B310AC /* SceneDelegate.swift */,
-				CEDD24772897911400B310AC /* ViewController.swift */,
-				CEDD24792897911400B310AC /* Main.storyboard */,
-				CEDD247C2897911400B310AC /* Assets.xcassets */,
-				CEDD247E2897911400B310AC /* LaunchScreen.storyboard */,
+				CEDD24872897924100B310AC /* Applications */,
+				CEDD24882897925700B310AC /* Controllers */,
+				CEDD24892897926400B310AC /* Resources */,
 				CEDD24812897911400B310AC /* Info.plist */,
 			);
 			path = ScheduleApp;
+			sourceTree = "<group>";
+		};
+		CEDD24872897924100B310AC /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD24732897911400B310AC /* AppDelegate.swift */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		CEDD24882897925700B310AC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD24772897911400B310AC /* MainTabBarController.swift */,
+				CEDD248A2897962B00B310AC /* ScheduleViewController.swift */,
+				CEDD248C2897965800B310AC /* TasksViewController.swift */,
+				CEDD248E2897968100B310AC /* ContactsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CEDD24892897926400B310AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD247E2897911400B310AC /* LaunchScreen.storyboard */,
+				CEDD247C2897911400B310AC /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +154,6 @@
 			files = (
 				CEDD24802897911400B310AC /* LaunchScreen.storyboard in Resources */,
 				CEDD247D2897911400B310AC /* Assets.xcassets in Resources */,
-				CEDD247B2897911400B310AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +164,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEDD24782897911400B310AC /* ViewController.swift in Sources */,
+				CEDD248B2897962B00B310AC /* ScheduleViewController.swift in Sources */,
+				CEDD248D2897965800B310AC /* TasksViewController.swift in Sources */,
+				CEDD24782897911400B310AC /* MainTabBarController.swift in Sources */,
 				CEDD24742897911400B310AC /* AppDelegate.swift in Sources */,
-				CEDD24762897911400B310AC /* SceneDelegate.swift in Sources */,
+				CEDD248F2897968100B310AC /* ContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CEDD24792897911400B310AC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEDD247A2897911400B310AC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CEDD247E2897911400B310AC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +314,6 @@
 				INFOPLIST_FILE = ScheduleApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +341,6 @@
 				INFOPLIST_FILE = ScheduleApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
