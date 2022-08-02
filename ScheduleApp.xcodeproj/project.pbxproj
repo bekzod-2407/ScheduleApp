@@ -115,7 +115,6 @@
 				CAFF510D4AF5DBF9C7E86687 /* Pods-ScheduleApp.debug.xcconfig */,
 				D0D5D2F6A8ADEF65507ED0D5 /* Pods-ScheduleApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
